@@ -23,7 +23,7 @@
             class="todo__input-field"
             placeholder="Create a new todo..."
             #newTask
-            (keyup.enter)="addTask(newTask.value); newTask.value = ''"
+            (keydown.enter)="addTask(newTask.value); newTask.value = ''"
           />
           <input
             type="checkbox"
