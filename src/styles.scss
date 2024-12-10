@@ -1,1 +1,225 @@
 /* You can add global styles to this file, and also import other style files */
+@use './variables' as *;
+
+body.light-theme {
+  background-color: $bg-color-light;
+  color: $text-color-light;
+
+  .todo {
+    &__input {
+      box-shadow: 0 35px 50px -15px $shadow-color-light;
+    }
+
+    &__checkbox {
+      background-color: $list-bg-color-light;
+      border: 1px solid $checkbox-color-border-light;
+      transition: all 0.3s ease;
+    }
+
+    &__input-field {
+      background: $input-bg-color-light;
+      color: $text-color-light;
+    }
+
+    &__header {
+      background:
+        $header-bg-image-light center/cover no-repeat,
+        $gradient-check-background
+      ;
+    }
+
+    &__list {
+      background: $list-bg-color-light;
+      box-shadow: 0 35px 50px -15px $shadow-color-light;
+    }
+
+    &__item {
+      border-bottom: 1px solid $line-separator-color-light;
+    }
+
+    &__text {
+      color: $text-color-light;
+    }
+
+    &__item--completed {
+      color: $text-color-completed-light;
+    }
+
+    &__actions {
+      background: $list-bg-color-light;
+      box-shadow: 0 35px 50px -15px $shadow-color-light;
+    }
+
+    &__filter {
+      color: $filter-color-light;
+    }
+  }
+
+  .cdk-drag-preview {
+    background-color: $list-bg-color-light;
+    box-shadow: 0 35px 50px -15px $shadow-color-light;
+  }
+
+  .cdk-drop-list-dragging {
+    background-color: $list-bg-color-light;
+  }
+
+  @media (min-width: 768px) {
+    .todo {
+      &__header {
+        background:
+          $header-bg-image-desktop-light center/cover no-repeat,
+          $gradient-check-background
+        ;
+      }
+
+      &__filter:hover, &__button-clear:hover {
+        color: $button-filter-hover-light;
+      }
+    }
+  }
+}
+
+body.dark-theme {
+  background-color: $bg-color-dark;
+  color: $text-color-dark;
+
+  .todo {
+    &__input {
+      box-shadow: 0 35px 50px -15px $shadow-color-dark;
+    }
+
+    &__checkbox {
+      background-color: $list-bg-color-dark;
+      border: 1px solid $checkbox-color-border-dark;
+      transition: all 0.3s ease;
+    }
+
+    &__input-field {
+      background: $input-bg-color-dark;
+      color: $text-color-dark;
+    }
+
+    &__header {
+      background:
+        $header-bg-image-dark center/cover no-repeat,
+        $gradient-check-background
+      ;
+    }
+
+    &__list {
+      background: $list-bg-color-dark;
+      box-shadow: 0 35px 50px -15px $shadow-color-dark;
+    }
+
+    &__item {
+      border-bottom: 1px solid $line-separator-color-dark;
+    }
+
+    &__text {
+      color: $text-color-dark;
+    }
+
+    &__item--completed {
+      color: $text-color-completed-dark;
+    }
+
+    &__actions {
+      background: $list-bg-color-dark;
+      box-shadow: 0 35px 50px -15px $shadow-color-dark;
+    }
+
+    &__filter {
+      color: $text-color-dark;
+    }
+  }
+  
+  .cdk-drag-preview {
+    background-color: $list-bg-color-dark;
+    box-shadow: 0 35px 50px -15px $shadow-color-dark;
+  }
+
+  .cdk-drop-list-dragging {
+    background-color: $list-bg-color-dark;
+  }
+
+  @media (min-width: 768px) {
+    .todo {
+      &__header {
+        background:
+          $header-bg-image-desktop-dark center/cover no-repeat,
+          $gradient-check-background
+        ;
+      }
+
+      &__filter:hover, &__button-clear:hover {
+        color: $button-filter-hover-dark;
+      }
+     }
+  }
+}
+
+
+
+body.dark-theme .todo__theme-icon--dark {
+  display: none;
+}
+
+body.dark-theme .todo__theme-icon--light {
+  display: block;
+}
+
+body.light-theme .todo__theme-icon--light {
+  display: none;
+}
+
+body.light-theme .todo__theme-icon--dark {
+  display: block;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-body;
+  font-weight: $font-weight-regular;
+  transition: background-color 0.3s, color 0.3s ease;
+}
+
+*, *::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem;
+  width: 100%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0.5;
+}
+

@@ -1,0 +1,35 @@
+$color-primary-bright-blue: #3a7bfd;
+$gradient-check-background: linear-gradient(to right, #55ddff, #c058f3);
+
+// Light theme variables
+$bg-color-light: #fafafa;
+$list-bg-color-light: #fff;
+$text-color-light: #484b6a;
+$filter-color-light: #9495a5;
+$button-filter-hover-light: #494c6b;
+$text-color-completed-light: #d1d2da;
+$input-bg-color-light: #fff;
+$header-bg-image-light: url('/assets/images/bg-mobile-light.jpg');
+$line-separator-color-light: #e4e5f1;
+$checkbox-color-border-light: #e4e5f1;
+$header-bg-image-desktop-light: url('/assets/images/bg-desktop-light.jpg');
+$shadow-color-light: rgba(194, 195, 214, 0.5);
+
+// Dark theme variables
+$bg-color-dark: #161722;
+$list-bg-color-dark: #25273c;
+$text-color-dark: #cacde8;
+$button-filter-hover-dark: #e3e4f1;
+$text-color-completed-dark: #777a92;
+$input-bg-color-dark: #25273c;
+$header-bg-image-dark: url('/assets/images/bg-mobile-dark.jpg');
+$line-separator-color-dark: #393a4c;
+$checkbox-color-border-dark: #393a4c;
+$header-bg-image-desktop-dark: url('/assets/images/bg-desktop-dark.jpg');
+$shadow-color-dark: rgba(0, 0, 0, 0.5);
+
+/* Typographie */
+$font-family-primary: 'Josefin Sans', sans-serif;
+$font-size-body: 18px;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
