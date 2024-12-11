@@ -85,6 +85,7 @@ export class AppComponent {
 
   clearCompletedTasks() {
     this.tasks.update(value => clearCompletedTasks(value))
+    this.updateFilteredTasks();
   }
 
   onDroop(event: CdkDragDrop<Task[]>): void {

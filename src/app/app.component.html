@@ -34,7 +34,7 @@
         </div>
       </div>
       <ul class="todo__list" cdkDropList (cdkDropListDropped)="onDroop($event)">
-        @for (task of filteredTasks(); track task._id) {
+        @for (task of filteredTasks(); track task.name) {
           <li class="todo__item" cdkDrag>
             <div class="todo__item-list">
               <input

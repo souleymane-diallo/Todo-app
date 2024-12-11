@@ -12,7 +12,7 @@ export function toggleTheme(isDarkTheme: boolean): boolean {
   body.classList.toggle('light-theme', !isDarkTheme);
 
   saveThemeToLocalStorage(isDarkTheme);
-  
+
   return !isDarkTheme;
 }
 
