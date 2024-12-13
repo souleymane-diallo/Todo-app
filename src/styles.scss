@@ -133,7 +133,7 @@ body.dark-theme {
       color: $text-color-dark;
     }
   }
-  
+
   .cdk-drag-preview {
     background-color: $list-bg-color-dark;
     box-shadow: 0 35px 50px -15px $shadow-color-dark;
@@ -204,12 +204,8 @@ button {
 
 /* Footer */
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: auto;
   padding: 1.5rem;
-  width: 100%;
 }
 .attribution {
   font-size: 11px;
